@@ -89,7 +89,7 @@ class MyApp extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 10),
                       child: const Text(
-                        "R\$ 5000,00",
+                        "R\$ 5.000,00",
                         style: TextStyle(
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
@@ -212,7 +212,7 @@ class MyApp extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 30),
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(244, 239, 246, 1),
+                  color: const Color.fromARGB(239, 235, 227, 241),
                   borderRadius: BorderRadius.circular(12)
                 ),
                 child: Row(
@@ -233,19 +233,20 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(30),
+                height: 90,
+                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
                 decoration: BoxDecoration(
-                  color: const Color.fromRGBO(244, 239, 246, 1),
+                  color: const Color.fromARGB(239, 235, 227, 241),
                   borderRadius: BorderRadius.circular(12)
                 ),
                 child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "Guarde seu dinheiro em caixinhas",
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                         color: Color.fromRGBO(138,5,190,1),
                       ),
@@ -253,8 +254,9 @@ class MyApp extends StatelessWidget {
                     Text(
                       "Acessando a área de planejamento",
                       style: TextStyle(
-                        fontSize: 12,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
+                        color: Color.fromRGBO(126, 126, 126, 1),
                       ),
                     ),
                   ],
@@ -304,7 +306,7 @@ class MyApp extends StatelessWidget {
                   const Row(
                     children: [
                       Text(
-                        "R\$ 1270,45",
+                        "R\$ 1.270,45",
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -330,7 +332,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     decoration: BoxDecoration(
-                      color: const Color.fromRGBO(244, 239, 246, 1),
+                      color: const Color.fromARGB(239, 235, 227, 241),
                       borderRadius: BorderRadius.circular(20)
                     ),
                     child: TextButton(
@@ -338,7 +340,7 @@ class MyApp extends StatelessWidget {
                       child: const Text("Renogociar",
                       style: TextStyle(
                         fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 1),
                       ),
                       ),
@@ -392,7 +394,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
+                    margin: const EdgeInsets.symmetric(vertical: 10),
                     child: const Text(
                       "Descubra Mais",
                       style: TextStyle(
@@ -403,7 +405,7 @@ class MyApp extends StatelessWidget {
 
                   ),
                   Container(
-                    margin: const EdgeInsets.only(bottom: 30),
+                    margin: const EdgeInsets.only(left: 10, right: 10 ,bottom: 30),
                     decoration: BoxDecoration(
                       color: const Color.fromRGBO(244, 239, 246, 1),
                       borderRadius: BorderRadius.circular(10),
@@ -419,9 +421,8 @@ class MyApp extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.symmetric(vertical: 15),
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
@@ -443,7 +444,7 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: const EdgeInsets.all(4),
+                                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
                                 decoration: BoxDecoration(
                                   color: const Color.fromRGBO(138,5,190,1),
                                   borderRadius: BorderRadius.circular(26),
