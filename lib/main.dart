@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        //Header
         appBar:  AppBar(
           backgroundColor: const Color.fromRGBO(138,5,190,1),
           leading: Padding(
@@ -61,10 +62,12 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+        //Corpo da aplicação
         body: Container(
           margin: const EdgeInsets.symmetric(horizontal: 24),
           child: ListView(
             children: [
+              //Seção saldo da conta
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 30),
                 child: Column(
@@ -262,12 +265,14 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
+              //Barra divisória
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 30),
                 child: const Divider(
                   height: 1,
                 ),
               ),
+              //Seção cartão de crédito
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -348,12 +353,14 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
+              // barra divisória
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 30),
                 child: const Divider(
                   height: 1,
                 ),
               ),
+              // seção empréstimo
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -383,12 +390,14 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
+              // barra divisória
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 30),
                 child: const Divider(
                   height: 1,
                 ),
               ),
+              //Seção descubra mais
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
